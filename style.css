@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9fbfd;
+}
+
+.title {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  padding-top: 0px;
+  color: hsl(206, 17%, 28%);
+}
+
+.main {
+  background-color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  color: hsl(206, 17%, 28%);
+  font-size: 18px;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 35px 45px;
+}
+
+.main-header::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: white;
+  height: 5px;
+}
+
+.main-header {
+    size: 15px;
+}
+
+.main-header {
+    text-align: center;
+}
+
+.main-body {
+    min-height: 150px;
+  }
+
+.main-body {
+    text-align: center;
+}
+  
+.main-button {
+  text-align: center;
+}
+
+.main-button::before {
+  content: " ";
+  display: block;
+  width: 100%;
+  background: white;
+  height: 5px;
+}
+
+.main-button::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.button {
+  border: none;
+  background-color: green;
+  border-radius: 30px;
+  box-shadow: black;
+  color: white;
+  display: inline-block;
+  font-size: 25px;
+  line-height: 25px;
+  margin: 15px 15px 15px 20px;
+  padding: 15px 35px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button[disabled] {
+  cursor: default;
+  background: grey;
+}
+
+.float-right {
+  float: right;
+}
+
+@media (max-width: 700px) {
+  .btn {
+    font-size: 1rem;
+    margin: 15px 0px 0px 0px;
+    padding: 10px 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .btn {
+    font-size: 0.7rem;
+  }
+}
